@@ -26,12 +26,14 @@ Before starting, make sure you have:
 Note: You can also use the official OpenAI SDK if preferred.
 ##  .env
 You need an `.env` in the directory.  It must have:
+```
 DB_HOST=localhost
 DB_USER=Win10Diag
 DB_PASS=Kenyon1824Diag
 DB_NAME=diagnostics
 PORT=3001
 OPENAI_API_KEY=youropenaikey
+```
 
 ## Get an OpenAI API Key
 1. Create an OpenAI Account
