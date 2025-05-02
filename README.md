@@ -54,3 +54,6 @@ Navigate to https://platform.openai.com/account/billing/overview
 Click “Set up paid account” and enter a valid credit card.
 
 You will be charged based on usage, not a flat fee unless you choose a subscription like ChatGPT Plus (for web use only).
+
+## To run
+`node server.js`
