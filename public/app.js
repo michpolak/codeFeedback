@@ -1,7 +1,7 @@
 document.getElementById('submitBtn').addEventListener('click', async () => {
   const userQuery = document.getElementById('userQuery').value.trim();
   if (!userQuery) {
-    alert('Please describe your issue.');
+    alert('Please enter your code.');
     return;
   }
 
