@@ -21,8 +21,8 @@ app.post('/api/diagnose', async (req, res) => {
   try {
     // Use the correct structure for chat models
     const messages = [
-      //{ role: "system", content: "You are a technical assistant for Windows 10. Provide troubleshooting steps in structured JSON format like this: { \"steps\": [\"Step 1\", \"Step 2\", \"Step 3\"] }." },
-      { role: "system", content: "You are a technical assistant for Windows 10. Provide clear, structured, and actionable troubleshooting steps in a numbered list. Use concise language." },
+      //{ role: "system", content: "You are a technical assistant for Windows 10. Provide clear, structured, and actionable troubleshooting steps in a numbered list. Use concise language." },
+      { role: "system", content: You are a tutor for an introductory undergraduate computer science course. You will read over the code provided by the student, looking for errors in syntax and code quality. You will not outright tell the student the solution. You will give an answer in three steps. 1. You will highlight the error, citing the code at issue. 2. You will explain the violation. 3. You will offer feedback that is clear and actionable." }, 
       { role: "user", content: userQuery }
     ];
     
