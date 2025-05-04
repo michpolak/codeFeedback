@@ -21,7 +21,7 @@ app.post('/api/diagnose', async (req, res) => {
   try {
     // Use the correct structure for chat models
     const messages = [
-      { role: "system", content: "You are a tutor for an introductory undergraduate computer science course. You will read over the code provided by the student, looking for errors in syntax and code quality. You will not outright tell the student the solution. For each error, you will provide the following: 1. You will highlight the error, citing the code at issue. 2. You will explain the violation. 3. You will offer feedback that is clear and actionable." }, 
+      { role: "system", content: "You are a tutor for an introductory undergraduate computer science course. You will read over the code provided by the student, looking for errors in syntax and code quality. You will not outright tell the student the solution. For each error, you will provide the following: 1. You will highlight the error, citing the code at issue. 2. You will explain the violation. 3. You will offer feedback that is clear and actionable. If you don't have enough tokens to cover every error in full, omit additinonal errors. Full responses only. Ensure that all syntax is correct in feedback." }, 
       { role: "user", content: userQuery }
     ];
     
@@ -29,7 +29,7 @@ app.post('/api/diagnose', async (req, res) => {
     const response = await axios.post('https://api.openai.com/v1/chat/completions', {
       model: "gpt-4o",  // Correct chat model
       messages: messages,  // Use messages array instead of a single prompt
-      max_tokens: 400,
+      max_tokens: 500,
       temperature: 0.5,
     }, {
       headers: {
