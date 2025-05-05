@@ -38,7 +38,7 @@ app.post('/api/diagnose', async (req, res) => {
     const response = await axios.post('https://api.openai.com/v1/chat/completions', {
       model: "gpt-4o",  // Correct chat model
       messages: messages,  // Use messages array instead of a single prompt
-      max_tokens: 500,
+      max_tokens: 600,
       temperature: 0.5,
     }, {
       headers: {
