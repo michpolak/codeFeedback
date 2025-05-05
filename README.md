@@ -1,4 +1,4 @@
-# Win10Diagnose
+# Code Assistant Set-Up
 
 ## Prerequisites
 Before starting, make sure you have:
