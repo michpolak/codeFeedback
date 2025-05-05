@@ -4,6 +4,7 @@ This program is a proof of concept for an AI-Powered coding assistant for introd
 2. An explanation of the error: what is at fault, how this error might negatively impact their program
 3. Feedback on fixing the error 
 
+Many thanks to Professor Jim Skon for his assistance. 
 ## Prerequisites
 Before starting, make sure you have:
   - Node.js and npm installed
