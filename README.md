@@ -55,4 +55,4 @@ Visit: https://platform.openai.com/signup
 `node server.js`
 
 ## To use 
-- Paste code into the textbox. 
+Paste code into the textbox. 
