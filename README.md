@@ -1,4 +1,8 @@
 # Code Assistant Set-Up
+This program is a proof of concept for an AI-Powered coding assistant for introductory students. Rather than outright offering a fixed version of code for the user, the OpenAI API is instructed to select three errors to explain in depth. Once code is submitted, the following information will be provided for each error:
+1. A brief description of the error
+2. An explanation of the error: what is at fault, how this error might negatively impact their program
+3. Feedback on fixing the error 
 
 ## Prerequisites
 Before starting, make sure you have:
