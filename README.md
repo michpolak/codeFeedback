@@ -61,3 +61,6 @@ Visit: https://platform.openai.com/signup
 
 ## To use 
 Paste code into the textbox. 
+
+## Customization 
+If you would like to change the token limit, the variable max_tokens may be found in server.js under const response. If the prompt requires adjusting, edit the content of role: "system" located under const messages, also located in server.js. 
