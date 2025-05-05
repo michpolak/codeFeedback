@@ -41,7 +41,7 @@ app.post('/api/diagnose', async (req, res) => {
     const diagnosis = response.data.choices[0].message.content.trim()
       .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>") // Bold
       .replace(/\*(.*?)\*/g, "<em>$1</em>") // Italics
-      .replace(/\n/g, "<br>"); // Line breaks for better readability  
+      //.replace(/\n/g, "<br>"); // Line breaks for better readability  
     res.json({ diagnosis });
   } catch (error) {
     console.error('Error calling OpenAI API:', error.response ? error.response.data : error.message);
