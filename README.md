@@ -53,3 +53,6 @@ Visit: https://platform.openai.com/signup
 
 ## To run
 `node server.js`
+
+## To use 
+- Paste code into the textbox. 
